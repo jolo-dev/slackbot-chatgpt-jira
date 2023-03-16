@@ -26,13 +26,13 @@ const jira = new JiraApi(options);
 export async function createIssue(body: IssueObject){
    const issue: JiraApi.IssueObject = {
      fields: {
-       issueType: {
+       issuetype: {
          id: '10026' // Issuetype: Task
        },
        project: {
-        key: 'NYY-1'
+        key: 'NYY'
       },
-      summary: body.summary.title,
+      summary: body.summary.title.replace('1. Title: "', '').replace('"',''),
       description: body.summary.output
     } 
    }
