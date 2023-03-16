@@ -1,0 +1,19 @@
+{
+  "name": "@slackbot-chatgpt-jira/core",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "sst bind vitest",
+    "typecheck": "tsc -noEmit"
+  },
+  "devDependencies": {
+    "@types/jira-client": "^7.1.6",
+    "@types/node": "^18.14.6",
+    "sst": "^2.1.12",
+    "vitest": "^0.29.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-lambda": "^3.290.0",
+    "sst": "^2.1.12"
+  }
+}
